@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellphoneS - Điện thoại, laptop, tablet, phụ kiện chính hãng</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <!-- Import Icons from Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <div id="app">
+        <!-- Begin: Header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="header-inner">
+                    <div class="header-logo">
+                        <img src="../assets/img/header-logo.png" alt="Logo" class="header-logo__img hide-on-tablet">
+                        <img src="../assets/img/header-logo-tablet.png" alt="Logo" class="header-logo__img hide-on-pc hide-on-mobile">
+                    </div>
+                    <div class="header-category hide-on-tablet-mobile hide">
+                        <i class='bx bxs-category'></i>
+                        <span>Danh mục</span>
+                    </div>
+                    <div class="header-location">
+                        <i class='bx bx-location-plus'></i>
+                        <div class="header-location__text">
+                            <h3>Xem giá tại</h3>
+                            <p>Hồ Chí Minh</p>
+                        </div>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="header-search">
+                        <i class='bx bx-search' ></i>
+                        <input type="text" placeholder="Bạn cần tìm gì?" class="header-search__input">
+                    </div>
+                    <!-- Header Navbar -->
+                    <nav class="header-navbar">
+                        <a href="tel:18002097" class="header-item hide-on-mobile">
+                            <i class='bx bx-phone'></i>
+                            <p>Gọi mua hàng <br> 1800.2097</p>
+                        </a>
+                        <a href="tel:18002097" class="header-item hide-on-mobile">
+                            <i class='bx bx-location-plus'></i>
+                            <p>Cửa hàng <br> gần bạn</p>
+                        </a>
+                        <a href="tel:18002097" class="header-item hide-on-tablet-mobile hide">
+                            <i class='bx bx-cart-download'></i>
+                            <p>Tra cứu <br> đơn hàng</p>
+                        </a>
+                        <a href="../cart.html" class="header-item">
+                            <i class='bx bx-shopping-bag'></i>
+                            <p>Giỏ <br> hàng</p>
+                        </a>
+                    </nav>
+                    <label for="modal">
+                        <div class="header-login hide-on-mobile">
+                            <i class='bx bx-user-circle'></i>
+                            <p>Đăng nhập</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <!-- End: Header -->
+
+        <!-- Begin: Content -->
+        <main class="content">
+            <div class="grid wide">
+                <div class="sign-up">
+                    <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
+                    <div class="sign-up-img">
+                        <img src="../assets/img/sign-up.png" alt="">
+                    </div>
+                    <p>Đăng ký tài khoản Smember</p>
+                    <form action="">
+                        <div class="form-group">
+                            <input required type="text" id="username1">
+                            <label  for="username1">Địa chỉ email hoặc số điện thoại</label>
+                        </div>
+                        <div class="form-group">
+                            <input required type="password" name="" id="pwd1">
+                            <label for="pwd1">Mật khẩu</label>
+                        </div>
+                        <div class="form-group">
+                            <input required type="password" name="" id="pwdCheck1">
+                            <label for="pwdCheck1">Xác nhận mật khẩu</label>
+                            <span class="errPwd"></span>
+                        </div>
+                        <button class="sign-up-btn" type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- End: Content -->
+
+        <!-- Modal Login -->
+        <input type="checkbox" name="" hidden id="modal">
+        <div class="modal">
+            <label for="modal">
+                <div class="modal-overlay"></div>
+            </label>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>ĐĂNG NHẬP TÀI KHOẢN SMEMBER</h4>
+                    <label style="cursor: pointer;" for="modal">
+                        <p><span>&times;</span></p>
+                    </label>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="username">Tên đăng nhập</label>
+                            <input type="text" id="username" required placeholder="Nhập email hoặc số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu</label>
+                            <input type="password" id="pwd" required placeholder="Nhập mật khẩu">
+                        </div>
+                    </form>
+                    <p class="forget-pwd">
+                        <a href="#">Đăng ký</a>
+                    </p>
+                    <button class="login-btn">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/auth/signUp.js"></script>
+    <script src="../js/auth/login.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

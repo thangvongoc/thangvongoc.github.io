@@ -1,3 +1,9 @@
+@media (max-width: 77.4375em) {
+    .hide {
+        display: none;
+    }
+}
+
 /* Mobile & Tablet */
 @media (max-width: 63.9375em) {
     .content {
@@ -14,14 +20,21 @@
     }
 
     .header-inner {
-        padding: 0 10px;
+        padding: 10px;
         justify-content: space-between;
+        height: auto;
+        gap: 10px;
     }
 
     .header-logo {
         width: 34px;
         border: 1px solid #ccc;
         border-radius: 25%;
+    }
+
+    .header-search {
+        width: 100%;
+        order: 1;
     }
 
     .product-heading {
@@ -69,16 +82,21 @@
         width: 93.4px;
     }
 
+    .product-desc {
+        margin-top: 30px;
+    }
+
+    .header-navbar {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
 }
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .hide-on-tablet {
         display: none;
-    }
-
-    .header-search {
-        width: 200px;
     }
 
     .small-product-list {
@@ -94,6 +112,30 @@
     .company-address {
         text-align: left;
     }
+
+    .product-img h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-img img {
+        width: 110px;
+    }
+
+    .product-img ul {
+        font-size: 1.1rem;
+    }
+
+    .product-img ul li::marker {
+        font-size: 1.5rem;
+    }
+
+    .product-type .product-new-price {
+        font-size: 1.6rem;
+    }
+
+    .product-type .product-old-price {
+        font-size: 1.2rem;
+    }
 }
 
 /* Mobile */
@@ -102,22 +144,10 @@
         display: none !important;
     }
 
-    .header-inner {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        height: auto;
-    }
-
     .header-logo {
         width: 161px;
         border: unset;
         border-radius: unset;
-    }
-
-    .header-search {
-        width: 100%;
-        margin-top: 10px;
-        order: 1;
     }
 
     .header-location__text h3 {
@@ -209,6 +239,31 @@
 
     .small-product-link span {
         font-size: 1rem;
+    }
+
+    .product-type {
+        margin-top: 30px;
+    }
+
+    .color-item {
+        padding-left: 0;
+    }
+
+    .product-item-img img {
+        width: 120px;
+    }
+
+    .product-item-price p:first-child {
+        font-size: 1rem;
+    }
+
+    .product-item-price p:last-child {
+        font-size: 0.9rem;
+    }
+
+    .header-item span {
+        left: 21px;
+        top: calc(50% - 4px);
     }
 
 }

@@ -5,47 +5,53 @@ const phoneProducts = [
         oldPrice: '28.990.000đ',
         newPrice: '25.590.000đ',
         desc: '[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1km khác',
-        sale: 'Giảm 12%'
+        sale: 'Giảm 12%',
+        href: './products-detail/ip-12.html'
     },
     {
         path: '../assets/img/phone-product/ip_14.jpg',
         name: 'iPhone 14 Plus 128GB | Chính hãng VN/A',
-        oldPrice: '24.990.000đ',
-        newPrice: '27.990.000đ',
+        newPrice: '24.990.000đ',
+        oldPrice: '27.990.000đ',
         desc: 'Giảm thêm đến 2 triệu khi thanh toán qua ví/ngân hàng Moca, VNPAY, Nam Á, STANDARD CHATERED,...',
-        sale: 'Giảm 11%'
+        sale: 'Giảm 11%',
+        href: './products-detail/ip-14.html'
     },
     {
         path: '../assets/img/phone-product/ip_14-pro.png',
         name: 'iPhone 14 Pro 256GB | Chính hãng VN/A',
-        oldPrice: '31.990.000đ',
-        newPrice: '34.990.000đ',
+        newPrice: '31.990.000đ',
+        oldPrice: '34.990.000đ',
         desc: 'Giảm thêm đến 2 triệu khi thanh toán qua ví/ngân hàng Moca, VNPAY, Nam Á, STANDARD CHATERED,...',
-        sale: 'Giảm 9%'
+        sale: 'Giảm 9%',
+        href: './products-detail/ip-14-pro.html'
     },
     {
         path: '../assets/img/phone-product/galaxy.jpg',
         name: 'Samsung Galaxy Z Fold4',
-        oldPrice: '36.390.000đ',
-        newPrice: '40.990.000đ',
+        newPrice: '36.390.000đ',
+        oldPrice: '40.990.000đ',
         desc: 'Thu cũ đổi mới giảm ngay 5.000.000đ và 2 km',
-        sale: 'Giảm 11%'
+        sale: 'Giảm 11%',
+        href: './products-detail/samsung.html'
     },
     {
         path: '../assets/img/phone-product/xiaomi.png',
         name: 'Xiaomi Redmi Note 11',
-        oldPrice: '4.150.000đ',
-        newPrice: '4.690.000đ',
+        newPrice: '4.150.000đ',
+        oldPrice: '4.690.000đ',
         desc: 'Thu cũ đổi mới - Trợ giá đến 300.000đ',
-        sale: 'Giảm 12%'
+        sale: 'Giảm 12%',
+        href: './products-detail/xiaomi.html'
     },
     {
         path: '../assets/img/phone-product/ip_12-64gb.jpg',
         name: 'iPhone 12 64GB | Chính hãng VN/A',
-        oldPrice: '16.390.000đ',
-        newPrice: '19.990.000đ',
+        newPrice: '16.390.000đ',
+        oldPrice: '19.990.000đ',
         desc: '[HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ',
-        sale: 'Giảm 18%'
+        sale: 'Giảm 18%',
+        href: './products-detail/ip-12-64gb.html'
     },
 ]
 
@@ -56,7 +62,8 @@ const laptopProducts = [
         oldPrice: '31.590.000đ',
         newPrice: '35.990.000đ',
         desc: 'Thu cũ lên đời - Trợ giá 1 triệu',
-        sale: 'Giảm 12%'
+        sale: 'Giảm 12%',
+        href: './products-detail/laptop-1.html'
     },
     {
         path: '../assets/img/laptop/asus-rog.png',
@@ -64,7 +71,8 @@ const laptopProducts = [
         oldPrice: '18.990.000đ',
         newPrice: '23.990.000đ',
         desc: 'Ưu đãi 200.000đ khi mua kèm màn hình đồ họa ASUS USB-C',
-        sale: 'Giảm 21%'
+        sale: 'Giảm 21%',
+        href: './products-detail/laptop-2.html'
     },
     {
         path: '../assets/img/laptop/apple-mini.jpg',
@@ -72,7 +80,8 @@ const laptopProducts = [
         oldPrice: '17.990.000đ',
         newPrice: '19.990.000đ',
         desc: 'Mua Office Home & Student 2021 kèm Macbook chỉ còn 2,090,000',
-        sale: 'Giảm 10%'
+        sale: 'Giảm 10%',
+        href: './products-detail/laptop-3.html'
     },
     {
         path: '../assets/img/laptop/mac-pro.png',
@@ -80,7 +89,8 @@ const laptopProducts = [
         oldPrice: '47.590.000đ',
         newPrice: '52.990.000đ',
         desc: 'Thu cũ lên đời - Trợ giá 1 triệu',
-        sale: 'Giảm 10%'
+        sale: 'Giảm 10%',
+        href: './products-detail/laptop-4.html'
     },
     {
         path: '../assets/img/laptop/acer-nitro.png',
@@ -88,7 +98,8 @@ const laptopProducts = [
         oldPrice: '15.990.000đ',
         newPrice: '19.990.000đ',
         desc: 'Thu cũ lên đời - Trợ giá 1 triệu',
-        sale: 'Giảm 20%'
+        sale: 'Giảm 20%',
+        href: './products-detail/laptop-5.html'
     },
 ]
 
@@ -99,7 +110,8 @@ const desktopProducts = [
         newPrice: '42.490.000đ',
         oldPrice: '47.490.000đ',
         desc: 'Ưu đãi 200.000đ khi mua kèm màn hình đồ họa ASUS USB-C',
-        sale: 'Giảm 11%'
+        sale: 'Giảm 11%',
+        href: './products-detail/desktop-1.html'
     },
     {
         path: '../assets/img/desktop/vesa.png',
@@ -107,7 +119,8 @@ const desktopProducts = [
         newPrice: '395.000đ',
         oldPrice: '650.000đ',
         desc: 'Ưu đãi giảm 50,000 khi mua giá treo màn hình',
-        sale: 'Giảm 39%'
+        sale: 'Giảm 39%',
+        href: './products-detail/desktop-2.html'
     },
     {
         path: '../assets/img/desktop/xiaomi.png',
@@ -115,7 +128,8 @@ const desktopProducts = [
         newPrice: '3.090.000đ',
         oldPrice: '3.490.000đ',
         desc: 'Ưu đãi giảm 50,000 khi mua giá treo màn hình',
-        sale: 'Giảm 11%'
+        sale: 'Giảm 11%',
+        href: './products-detail/desktop-3.html'
     },
     {
         path: '../assets/img/desktop/dell.png',
@@ -123,7 +137,8 @@ const desktopProducts = [
         newPrice: '6.790.000đ',
         oldPrice: '7.990.000đ',
         desc: 'Ưu đãi giảm 50,000 khi mua giá treo màn hình',
-        sale: 'Giảm 15%'
+        sale: 'Giảm 15%',
+        href: './products-detail/desktop-4.html'
     },
     {
         path: '../assets/img/desktop/asus.png',
@@ -131,7 +146,8 @@ const desktopProducts = [
         newPrice: '2.990.000đ',
         oldPrice: '3.990.000đ',
         desc: 'Ưu đãi giảm 50,000 khi mua giá treo màn hình',
-        sale: 'Giảm 25%'
+        sale: 'Giảm 25%',
+        href: './products-detail/desktop-5.html'
     },
 ]
 
@@ -363,7 +379,7 @@ const render = (products, root) => {
     let htmls = products.reduce((preVal, curVal) => {
         return preVal + `
         <div class="col l-2-4 m-4 c-6">
-            <a href="#" class="product-item">
+            <a target='blank' href=${curVal.href ? curVal.href : '#'} class="product-item">
                 <div class="product-img">
                     <img src=${curVal.path} alt="">
                 </div>
@@ -393,8 +409,8 @@ const render = (products, root) => {
 render(phoneProducts, productPhone)
 render(laptopProducts, productLaptop)
 render(desktopProducts, productDesktop)
-render(tabletProducts, productTablet)
-render(headPhoneProducts, productHeadPhone)
-render(watchProducts, productWatch)
-render(houseProducts, productHouse)
-render(tiviProducts, productTivi)
+// render(tabletProducts, productTablet)
+// render(headPhoneProducts, productHeadPhone)
+// render(watchProducts, productWatch)
+// render(houseProducts, productHouse)
+// render(tiviProducts, productTivi)
