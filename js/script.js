@@ -1,6 +1,6 @@
 const isLogin = JSON.parse(localStorage.getItem('isLogin'))
 const headerLogin = document.querySelector('.header-login')
-const length = JSON.parse(localStorage.getItem('products')).length
+const length = JSON.parse(localStorage.getItem('products')) ? JSON.parse(localStorage.getItem('products')).length : 0
 
 if (isLogin) {
     document.querySelector('.header-login p').innerText = 'Đăng xuất'

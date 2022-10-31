@@ -21,7 +21,8 @@ addBtn.onclick = () => {
             img: img.src,
             name: name.innerText,
             oldPrice: oldPrice.getAttribute('value'),
-            newPrice: newPrice.getAttribute('value')
+            newPrice: newPrice.getAttribute('value'),
+            quantity: 1
         })
         localStorage.setItem('products', JSON.stringify(products))
         console.log(document.querySelector('.header-item span'));

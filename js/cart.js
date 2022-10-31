@@ -23,7 +23,7 @@ function render() {
                             <span>Chọn số lượng:</span>
                             <div class="quantity-input">
                                 <span>-</span>
-                                <input disabled type="text" value="1">
+                                <input disabled type="text" value=${curVal.quantity}>
                                 <span>+</span>
                             </div>
                         </div>
@@ -79,14 +79,26 @@ function handleClickQuantity() {
                 const quantity = btn.previousElementSibling
                 quantity.value = parseInt(quantity.value) + 1
                 calTotalPrice()
+                products.forEach(product => {
+                    if (product.name == btn.parentNode.parentNode.parentNode.childNodes[1].childNodes[0].data.trim()) {
+                        product.quantity = quantity.value
+                    }
+                })
             }
             else {
                 const quantity = btn.nextElementSibling
                 if (quantity.value != 1) {
                     quantity.value = parseInt(quantity.value) - 1
                     calTotalPrice()
+                    products.forEach(product => {
+                        if (product.name == btn.parentNode.parentNode.parentNode.childNodes[1].childNodes[0].data.trim()) {
+                            product.quantity = quantity.value
+                        }
+                    })
                 }
             }
+
+            localStorage.setItem('products', JSON.stringify(products))
         }
     })
 }
