@@ -92,6 +92,8 @@ html {
 }
 
 .header-logo {
+    display: block;
+    text-decoration: none;
     width: 161px;
 }
 
