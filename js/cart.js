@@ -1,5 +1,6 @@
 const products = JSON.parse(localStorage.getItem('products'))
 let totalPrice = document.querySelector('.total-price span')
+const chooseBtn = document.querySelector('.choose-btn')
 let deleteBtn
 
 function render() {
@@ -104,3 +105,7 @@ function handleClickQuantity() {
 }
 
 handleClickQuantity()
+
+chooseBtn.onclick = () => {
+    window.location = ('./index.html')
+}
