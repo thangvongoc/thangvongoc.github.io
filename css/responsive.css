@@ -91,6 +91,12 @@
         justify-content: flex-end;
     }
 
+    .footer-top,
+    .footer-bottom {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
 
 /* Tablet */
@@ -101,12 +107,6 @@
 
     .small-product-list {
         width: 1024px;
-    }
-
-    .footer-top,
-    .footer-bottom {
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .company-address {
